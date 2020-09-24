@@ -1,0 +1,66 @@
+Escape Sequence Characters
+-----------------------------------
+- A character preceded by a backslash (\) is an escape sequence and has special meaning to the compiler. 
+- A charcter that changes the original meaning is called escape character.
+- Every escape character must start with \ following by single character
+- When we place \ before one character some special funcationality will be added
+ for example: 
+ if we use n, n as it is displayed 
+ System.out.println("Hari n Krishna");  O/P is Hari n Krishna
+ if we place \ before n it meaning is not n it is a new line, 
+ n is not displayed, rather new line is displayed 
+ System.out.println("Hari \n Krishna");  O/P is Hari 
+    Krishna
+- After \ we can not place any character, we have only few characters
+- Java supports _____ escape sequence characters
+ Java suppots escape 8 sequence charcters
+ Escape Sequence Description
+ \f Insert a formfeed in the text at this point.
+ \b Insert a backspace in the text at this point.
+ \n Insert a newline in the text at this point.
+ \t Insert a tab space in the text at this point.
+ \r Insert a carriage return in the text at this point.
+ \' Insert a single quote character in the text at this point.
+ \" Insert a double quote character in the text at this point.
+ \\ Insert a backslash character in the text at this point.
+ \0 
+ \1 
+ \2 
+ \3 
+ \4 
+ \5 
+ \6 
+ \7 
+ \uxxxx --> unicode number
+Program #7: Explain all above escape sequence characters funcationality with a program
+ class EscapeSequence {
+     public static void main(String[] args) {
+   System.out.println("Hi\fHello"); 
+   System.out.println("HiHello\f");
+   System.out.println("\fHiHello");
+   System.out.println("HRU?");
+   System.out.println();
+   System.out.println("Hi\bHello"); 
+   System.out.println();
+   System.out.println("Hi\nHello"); 
+   System.out.println();
+   System.out.println("Hi\tHello"); 
+   System.out.println();
+   System.out.println("Hi\rHello"); 
+   System.out.println("HiHello\rHRU?"); 
+   System.out.println("HiHelloHRU?\r");
+   System.out.println("\rHiHelloHRU?");
+   System.out.println();
+ //          System.out.println("""); //DQ in DQ is not allowed
+ //          System.out.println(''');   //SQ in SQ is not allowed
+   System.out.println("\"");   
+   System.out.println('\'');  
+   System.out.println('"');   //In SQ DQ is allowed
+   System.out.println("'");   //In DQ SQ is allowed
+ //          System.out.println("\"); //HERE \ IS CONSIDERED AS ESCAPER
+ //          System.out.println('\'); //HERE \ IS CONSIDERED AS ESCAPER
+   System.out.println("\\"); //We must use \\ to consider \ as a \
+ //          System.out.println("\\\"); 
+   System.out.println("\\\\"); 
+     }
+ }
