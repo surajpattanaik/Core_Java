@@ -1,44 +1,22 @@
-class Test01
- 
+interface IFruit
+//class IFruit
 {
-	//int a = 1;
-	//int b = 2;
-	//int c = a+b;
-	//System.out.println(c);
+	 String TYPE ="banana";
+}
+class Fruit implements IFruit
+//class Fruit extends IFruit
+{
 
-	static int x = 3;
-
-	{
-		      int x = 7; 
-			System.out.println(x);
-	}
-
-	//System.out.println(x);
-	   
-		/*	
-        void lol()
-	    {
-		int y = 4 ;
-        System.out.println(y);
+}
+public class Test01 extends Fruit
+{
+	public static void main(String args[]){
+		 class Constant
+		{
+			final static String TYPE = "apple";
+               
 		}
-		*/
-
-		static void lolwaa() {
-			int x = 6;
-			int z = 5;
-			 System.out.println(z);
-			 System.out.println(x);
-		}
-		 
-	
-	public static void main(String[] args) 
-	{
-		System.out.println("Hello World!");
-		//System.out.println("value of C is "+ c);
-		System.out.println(x);
-		//lol();
-		lolwaa();
-		Test01 t1 = new Test01();
-
+		//System.out.println(Constant.TYPE);
+		System.out.println(TYPE);
 	}
 }
