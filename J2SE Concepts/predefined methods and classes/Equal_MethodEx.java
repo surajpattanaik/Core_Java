@@ -1,7 +1,5 @@
-$$$$$$$$$  Full story on == operator and equals() method $$$$$$
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-//==================== Example.java ===========================================
-public class  Example{
+
+public class  Equal_MethodEx{
  private int x ;
  private int y ;
  public Example(int x, int y){
@@ -96,26 +94,3 @@ public class  Test03{
  System.out.println(); 
  }
 }
-//Differences between == operator and equals()
-//====================================================================================
-// == operator | equals() method
-//====================================================================================
-// 1) == operator is used for comparing | 1) equals() method can compare  
-// both two primitives and two objects | only two objects
-// |
-// 2) == operator is always compares | 2) equals() method compares  
-// two objects by uisng their refences | two objects either by using their references
-// | or by using their state depending on its implimentation
-// |
-// 3) We can not overload == operator | 3) we must override equals() method
-// to compare objects with their state | to compare objects with their state
-// |
-// 4) By using == operator  we can not compare | 4) By using equals() method we can compare
-// incompatible objects, we will get CE | incompatible objects, we false as result
-// |
-// 5) By using == operator  we can compare | 5) By using equals() method we can not compare
-// two nulls or an object and null | two nulls or an object and null 
-// for two nulls comparison we will get true | for two nulls comparision we will get CE
-// for an object & null comparison we will get false | for an object and null comparison we will get false
-// for an null & object comparison we will get false | for a null and object comparison we will either CE/RE 
-//=====================================================================================
